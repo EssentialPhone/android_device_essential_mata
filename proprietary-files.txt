@@ -358,17 +358,14 @@ vendor/lib64/libseemore.so
 vendor/lib64/libubifocus.so
 
 # Sidecar
--app/Score/Score.apk
 app/Score/lib/arm64/libcxaudiohidlib_embcb_jni.so
 app/Score/lib/arm64/libCxAudioHidLib.so
 app/Score/lib/arm64/libusb1.0.so
 bin/fastboot_target
 etc/permissions/vendor-essential-hardware-sidecar.xml
--priv-app/Klik/Klik.apk;PRESIGNED
 vendor/bin/hw/vendor.essential.hardware.sidecar@1.0-service
 vendor/etc/init/vendor.essential.hardware.sidecar@1.0-service.rc
 vendor/etc/permissions/com.essential.feature.ESSENTIAL_EXPERIENCE.xml
-product/framework/vendor.essential.hardware.sidecar-V1.0-java.jar
 vendor/lib/hw/vendor.essential.hardware.sidecar@1.0-impl.so
 vendor/lib/vendor.essential.hardware.sidecar@1.0.so
 vendor/lib64/hw/vendor.essential.hardware.sidecar@1.0-impl.so
@@ -377,10 +374,6 @@ vendor/lib64/vendor.essential.hardware.sidecar@1.0.so
 # CNE
 etc/permissions/cneapiclient.xml
 etc/permissions/com.quicinc.cne.xml
-framework/cneapiclient.jar
-framework/com.quicinc.cne.api-V1.0-java.jar
-framework/com.quicinc.cne.jar
--priv-app/CNEService/CNEService.apk
 vendor/bin/cnd
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml
@@ -568,9 +561,6 @@ vendor/lib64/libsdmextension.so|c4a416cb8c0f5dc87bee8494d70247cf049224b9
 vendor/lib64/libtinyxml2_1.so|9d5179eda8ce70b9a4014b144f9d23d33509fddc
 
 # Hotword Enrollment
--priv-app/HotwordEnrollmentOKGoogleWCD9335/HotwordEnrollmentOKGoogleWCD9335.apk;PRESIGNED
--priv-app/HotwordEnrollmentTGoogleWCD9335/HotwordEnrollmentTGoogleWCD9335.apk;PRESIGNED
--priv-app/HotwordEnrollmentXGoogleWCD9335/HotwordEnrollmentXGoogleWCD9335.apk;PRESIGNED
 
 # IRQ balance
 vendor/bin/msm_irqbalance
@@ -691,13 +681,7 @@ vendor/lib64/libsmemlog.so
 vendor/bin/hvdcp_opti
 
 # Radio
--app/embms/embms.apk
 etc/permissions/embms.xml
-framework/embmslibrary.jar
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
--vendor/app/datastatusnotification/datastatusnotification.apk
--vendor/app/QtiTelephonyService/QtiTelephonyService.apk|a25342602cd74d18af3d73b0c7b20e800430c733
--vendor/app/radioconfig/radioconfig.apk
 vendor/bin/ATFWD-daemon
 vendor/bin/netmgrd
 vendor/bin/pd-mapper
@@ -711,7 +695,6 @@ vendor/etc/permissions/qcrilhook.xml
 vendor/etc/permissions/radioconfig.xml
 vendor/etc/permissions/radioconfiginterface.xml
 vendor/etc/permissions/telephonyservice.xml
-vendor/framework/qcrilhook.jar
 vendor/lib/libmdmdetect.so
 vendor/lib/libpdmapper.so
 vendor/lib/libpdnotifier.so
@@ -750,8 +733,6 @@ vendor/lib64/vendor.qti.hardware.radio.uim@1.0_vendor.so
 vendor/radio/qcril_database/qcril.db
 
 # Radio - IMS
--app/ims/ims.apk
--app/uceShimService/uceShimService.apk|acfdef9ac40bf6b1bd44dfb4e658387d4cf33d0a
 lib64/libdiag_system.so
 lib64/libimscamera_jni.so
 lib64/libimsmedia_jni.so
@@ -761,7 +742,6 @@ vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
 vendor/bin/imsrcsd
 vendor/etc/permissions/qti-vzw-ims-internal.xml
-vendor/framework/qti-vzw-ims-internal.jar
 vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so
 vendor/lib64/lib-dplmedia.so
 vendor/lib64/lib-imscmservice.so
@@ -804,7 +784,6 @@ vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
 
 # Time services
--vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/lib/libtime_genoff.so
 vendor/lib64/libtime_genoff.so
@@ -845,7 +824,6 @@ bin/wfdservice
 etc/init/wfdservice.rc
 etc/wfdconfig.xml
 etc/wfdconfigsink.xml
--framework/WfdCommon.jar
 lib/com.qualcomm.qti.wifidisplayhal@1.0.so
 lib/libFileMux.so
 lib/libOmxMux.so
@@ -871,7 +849,6 @@ lib/libwfduibcsrcinterface.so
 lib64/libmmosal.so
 lib64/libwfdclient.so
 lib64/libwfdnative.so
--priv-app/WfdService/WfdService.apk
 vendor/bin/wifidisplayhalservice
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
 vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so
